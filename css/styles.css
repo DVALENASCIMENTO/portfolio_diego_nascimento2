@@ -1,0 +1,180 @@
+/* Estilo básico */
+body {
+    font-family: 'Garamond', serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #1E1E1E; /* Preto opulento */
+    color: #D4AF37; /* Dourado */
+}
+
+header {
+    background-color: #101232;
+    color: #D4AF37;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 2px solid #D4AF37;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: #D4AF37;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Seções */
+section {
+    padding: 40px 20px;
+    margin: 20px 0;
+    background-color: #101232; /* Esmeralda profunda */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px rgba(212, 175, 55, 0.5);
+}
+
+section h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #D4AF37;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+#projetos .projeto {
+    background-color: #34495E; /* Metálico escuro */
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.3);
+}
+
+#projetos .projeto h4 {
+    color: #D4AF37;
+    font-size: 1.5rem;
+}
+
+#projetos .projeto p {
+    color: #BDC3C7; /* Tom metálico claro */
+}
+
+#projetos .projeto a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    color: #1E1E1E;
+    background-color: #D4AF37;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#habilidades ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+#habilidades ul li {
+    margin: 0 20px;
+    text-align: center;
+    color: #D4AF37;
+}
+
+#habilidades ul li img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+#contato form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#contato form label {
+    margin: 10px 0 5px;
+    color: #D4AF37;
+}
+
+#contato form input,
+#contato form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #BDC3C7;
+    background-color: #2C3E50;
+    color: #D4AF37;
+}
+
+#contato form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #D4AF37;
+    color: #1E1E1E;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.redes-sociais {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.redes-sociais a {
+    margin: 0 10px;
+    color: #D4AF37;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    #habilidades ul {
+        flex-direction: column;
+    }
+}
+
+/* Animação de rolagem suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Animações de entrada para as seções */
+section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
